@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Website Layout1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+            background-image: url("bc.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: aliceblue;
+        }
+
+        nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            background-size: cover;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            nav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY WEBSITE</h1>
+    </header>
+
+    <nav>
+        <a href="https://youtube.com/@mixup3921?si=UXomaALfzde1p1iu" target="_blank">Youtube Channel</a>
+        <a href="https://www.tiktok.com/@waheedmalik1277?_t=8oOxb23mLR3&_r=1" target="_blank">Tiktok</a>
+        <a href="https://www.facebook.com/share/r/NKUUGwvQQBXevYvc/?mibextid=xfxF2i" target="_blank">Facebook</a>
+        <a href="#" style="float:right">Link4</a>
+    </nav>
+
+    <main class="row">
+        <section class="leftcolumn">
+            <article class="card">
+                <h2>ANCIENT RUINS</h2>
+                <h5>Title description, July 27, 2024</h5>
+                <div class="fakeimg" style="height:500px; background-image: url('ancient_ruins.jpg');"
+                    alt="Ancient ruins image"></div>
+                <p style="font-size: 30px;">Here are some notable ancient ruins from around the world:</p>
+                <p>Ancient ruins are the remains of structures that were once part of ancient civilizations. These ruins
+                    can provide valuable insights into the cultures, technologies, and daily lives of people who lived
+                    long ago.</p>
+                <p>Machu Picchu (Peru): A 15th-century Inca citadel located in the Andes Mountains. Known for its
+                    sophisticated dry-stone construction, Machu Picchu is one of the most iconic archaeological sites in
+                    the world. It is often referred to as the "Lost City of the Incas."</p>
+                <p>Pompeii (Italy): An ancient Roman city buried by the eruption of Mount Vesuvius in AD 79. The city's
+                    preservation provides a detailed snapshot of Roman life, with well-preserved buildings, frescoes,
+                    and
+                    artifacts.</p>
+            </article>
+            <article class="card">
+                <h2>SKY BAR</h2>
+                <h5>Title description, July 29, 2024</h5>
+                <div class="fakeimg" style="height:700px; background-image: url('sky_bar.jpg')" alt="Sky bar image">
+                    Image
+                </div>
+                <p style="font-size: 30px;"> Here are some characteristics and notable examples of sky bars around the
+                    world:</p>
+                <p>A sky bar is a rooftop or high-rise bar that offers patrons stunning views of the surrounding
+                    cityscape or natural scenery. These bars are typically located on the top floors of skyscrapers,
+                    hotels, or other tall buildings, providing a unique and often luxurious setting for socializing,
+                    dining, and enjoying drinks.</p>
+                <p>Characteristics of Sky Bars:</p>
+                <ul>
+                    <li>Panoramic Views: The primary draw of a sky bar is its breathtaking views. Patrons can enjoy
+                        expansive vistas of city skylines, landmarks, oceans, mountains, or other scenic landscapes.
+                    </li>
+                    <li>Ambiance and Atmosphere: Sky bars often feature upscale and sophisticated atmospheres, with
+                        stylish decor, ambient lighting, and sometimes live music or DJs to enhance the experience.
+                    </li>
+                    <li>Menu and Cocktails: Many sky bars offer an extensive menu of gourmet cuisine, crafted cocktails,
+                        premium spirits, and fine wines. The drinks often include signature cocktails unique to the bar.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <aside class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:200px; background-image: url('safari_adventure.jpg');"
+                    alt="safari_adventure image">Image</div>
+                <p style="font-size: 20px;">Malik Waheed Waheed: A Glimpse into the Life of a Computer Science
+                    Enthusiast.</p>
+                <p>Malik Waheed Waheed is a dedicated and ambitious student currently pursuing a Bachelor's degree in
+                    Computer Science in Multan, Pakistan. Hailing from the vibrant city of Multan, known for its rich
+                    cultural heritage and historical significance, Malik is carving out his own path in the
+                    ever-evolving field of technology.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg" style="background-image:url('1 (1).jpg'); height: 300px;"
+                    alt="Popular post image 1"></div>
+                <div class="fakeimg" style="background-image:url('banner-1.jpg'); height: 400px;"
+                    alt="Popular post image 2">
+                    <p>Image</p>
+                </div>
+                <div class="fakeimg" style="background-image:url('1 (3).jpg'); height: 300px;"
+                    alt="Popular post image 3">
+                    <p>Image</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>In the context of social media, "Follow Me" is a common phrase used to encourage users to subscribe
+                    to or follow someone's account. This allows followers to see the content shared by that person or
+                    organization in their feed. Social media influencers, celebrities, businesses, and individuals often
+                    use this phrase to build their audience and increase engagement.
+                </p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+
+</html>
